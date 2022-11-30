@@ -1,6 +1,6 @@
-<?php
 
-$conn = mysqli_connect('localhost','root','','contact_db') or die('connection failed');
+
+<!-- $conn = mysqli_connect('localhost','root','','contact_db') or die('connection failed');
 
 if(isset($_POST['send'])){
 
@@ -18,9 +18,8 @@ if(isset($_POST['send'])){
       $message[] = 'message sent successfully!';
    }
 
-}
+} -->
 
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -42,9 +41,8 @@ if(isset($_POST['send'])){
 </head>
 <body>
 
-<?php
 
-if(isset($message)){
+<!-- if(isset($message)){
    foreach($message as $message){
       echo '
       <div class="message" data-aos="zoom-out">
@@ -54,8 +52,7 @@ if(isset($message)){
       ';
    }
 }
-
-?>
+ -->
 
 <!-- header section starts  -->
 
@@ -379,7 +376,7 @@ My excellent work ethic has provided me with many opportunities to accomplish go
 
 <!-- contact section ends -->
 
-<div class="credit"> &copy; copyright @ <?php echo date('Y'); ?> by <span>Tole Fikadu</span> </div>
+<div class="credit"> &copy; copyright @ <script>getFullYear ()</script> by <span>Tole Fikadu</span> </div>
 
 
 
